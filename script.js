@@ -14,24 +14,31 @@ const imgs = document.querySelectorAll('img');
 
 let fragmento = document.createDocumentFragment();
 
+
 // galery
 abrir3.addEventListener('click',()=>{   
     document.querySelector('.daltomid2').style.display = "none";
     document.querySelector('.daltomid').style.display = "none";
     document.querySelector('.tragos').style.display = "block";
+    document.querySelector('.portada').style.backgroundImage = "url(./img-card/pared-tragos.png)"
+
 })
 
 abrir4.addEventListener('click',()=>{   
     document.querySelector('.daltomid').style.display = "block";
     document.querySelector('.daltomid2').style.display = "none";
     document.querySelector('.tragos').style.display = "none";
+    document.querySelector('.portada').style.backgroundImage = "url(./img-card/portada-coctel.jpg)"
+
 
 })
-
+// menu
 abrir5.addEventListener('click',()=>{
     document.querySelector('.daltomid2').style.display = "block";
     document.querySelector('.daltomid').style.display = "none";
     document.querySelector('.tragos').style.display = "none";
+    document.querySelector('.portada').style.backgroundImage = "url(./img/portada.jpg)"
+
 
 
 })
@@ -40,6 +47,8 @@ abrir6.addEventListener('click',()=>{
     document.querySelector('.daltomid2').style.display = "none";
     document.querySelector('.daltomid').style.display = "none";
     document.querySelector('.tragos').style.display = "block";
+    document.querySelector('.portada').style.backgroundImage = "url(./img-card/pared-tragos.png)"
+
 
 })
 
@@ -47,6 +56,7 @@ abrir2.addEventListener('click',()=>{
     document.querySelector('.daltomid2').style.display = "block";
     document.querySelector('.daltomid').style.display = "none";
     document.querySelector('.tragos').style.display = "none";
+    document.querySelector('.portada').style.backgroundImage = "url(./img/portada.jpg)"
 
 
 })
@@ -83,7 +93,9 @@ abrir.addEventListener('click', () =>{
     document.querySelector('.daltomid').style.display = "block";
     document.querySelector('.daltomid2').style.display = "none";
     document.querySelector('.tragos').style.display = "none";
+    document.querySelector('.portada').style.backgroundImage = "url(./img-card/portada-coctel.jpg)"
 
+    
 })
 
 for(let i =0; i<3;i++){
