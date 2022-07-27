@@ -12,8 +12,26 @@ const abrir6 = document.getElementById('btns3');
 
 const imgs = document.querySelectorAll('img');
 
+
 let fragmento = document.createDocumentFragment();
 
+
+var scrollval =  0;
+window.addEventListener('scroll', () => {
+  if(scrollval > window.scrollY) {
+    document.querySelector('.subir').style.display = "none"
+  } else {
+    // Do something
+    document.querySelector('.subir').style.display = "block"
+  }
+  scrollval = window.scrollY;
+});
+
+window.addEventListener('load',()=>{
+    document.querySelector('.daltomid2').style.display = "none";
+    document.querySelector('.daltomid').style.display = "none";
+    document.querySelector('.tragos').style.display = "none";
+})
 
 // galery
 abrir3.addEventListener('click',()=>{   
@@ -21,7 +39,8 @@ abrir3.addEventListener('click',()=>{
     document.querySelector('.daltomid').style.display = "none";
     document.querySelector('.tragos').style.display = "block";
     document.querySelector('.portada').style.backgroundImage = "url(./img-card/pared-tragos.png)"
-
+    document.querySelector('.portada').style.backgroundPositionY ="top"
+    
 })
 
 abrir4.addEventListener('click',()=>{   
@@ -29,6 +48,7 @@ abrir4.addEventListener('click',()=>{
     document.querySelector('.daltomid2').style.display = "none";
     document.querySelector('.tragos').style.display = "none";
     document.querySelector('.portada').style.backgroundImage = "url(./img-card/portada-coctel.jpg)"
+    document.querySelector('.portada').style.backgroundPositionY ="bottom"
 
 
 })
@@ -37,7 +57,7 @@ abrir5.addEventListener('click',()=>{
     document.querySelector('.daltomid2').style.display = "block";
     document.querySelector('.daltomid').style.display = "none";
     document.querySelector('.tragos').style.display = "none";
-    document.querySelector('.portada').style.backgroundImage = "url(./img/portada.jpg)"
+    document.querySelector('.portada').style.backgroundImage = "url(./img/portada1.png)"
 
 
 
@@ -71,9 +91,9 @@ function galery(image,price){
 
 
 for(i = 1;i<9;i++){
-    var paramsGalery = galery(`${i}.png`,"$ 6.000")
+    var paramsGalery = galery(`${i}.png`,"$ 000")
     let paramsdiv = document.createElement('DIV')
-    paramsdiv.classList.add("col-4","col-md-3",`item-${i}`,'flex-items')
+    paramsdiv.classList.add("col-6","col-md-4",`item-${i}`,'flex-items')
 
     paramsdiv.innerHTML = paramsGalery[0] + paramsGalery[1];
     fragmento.appendChild(paramsdiv)
@@ -105,12 +125,13 @@ for(let i =0; i<3;i++){
 
 
     div2.classList.add('text-card')
-    a.classList.add(`link-${i}`,'items-link')
+    a.classList.add("col-6","col-md-4",`link-${i}`,'items-link')
     a.innerHTML = img[0]
 
     div2.appendChild(a)
     dalto.appendChild(div2)
 }
+
 dalto.appendChild(fragmento)
 
 

@@ -13,7 +13,8 @@
 </head>
 <body>
 
-<div class="portada">
+<div id="port" class="portada">
+    <img class="port-inicial" src="./img-card/port-inicial.png" alt="">
     <div class="text-port">
         <img src="./img/logo.png" alt="">
         <h4>Restaurant familiar</h4>
@@ -85,9 +86,14 @@
         <div class="tragos">
             <h1 class="col-12 ">Tragos</h1>
             <h2>Categorias</h2>
+            <div class="items-categoria row">
+                <li class="col-4 mojito"><a href="#mojito">Mojitos</a></li>
+                <li class="col-4 vino"><a href="#vino">Vinos </a></li>
+                <li class="col-4 vodka"><a href="#vodkas">Vodkas</a></li>
+            </div>
             <img width="400px" src="./img-card/port-vino.jpg" alt="">
 
-            <div class="name row">
+            <div class="row">
                 <h6 class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum?</h6>
                 <li class="col-6">Lorem, ipsum dolor.</li>
                 <li class="col-6">Lorem, ipsum dolor.</li>
@@ -96,8 +102,19 @@
                 <li class="col-6">Lorem, ipsum dolor.</li>
                 <li class="col-6">Lorem, ipsum dolor.</li>
             </div>
-            <h2>Mojitos</h2>
+            <h2 id="mojito">Mojitos</h2>
             <img class="col-4" src="./img-card/mojito.gif" alt="">
+            <div class="row">
+                <h6 class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum?</h6>
+                <li class="col-6">Lorem, ipsum dolor.</li>
+                <li class="col-6">Lorem, ipsum dolor.</li>
+                <li class="col-6">Lorem, ipsum dolor.</li>
+                <li class="col-6">Lorem, ipsum dolor.</li>
+                <li class="col-6">Lorem, ipsum dolor.</li>
+                <li class="col-6">Lorem, ipsum dolor.</li>
+            </div>
+            <h2 id="vino">Vinos</h2>
+            <img class="col-4" src="./img-card/pared-tragos2.png" alt="">
             <div class="name row">
                 <h6 class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum?</h6>
                 <li class="col-6">Lorem, ipsum dolor.</li>
@@ -107,18 +124,7 @@
                 <li class="col-6">Lorem, ipsum dolor.</li>
                 <li class="col-6">Lorem, ipsum dolor.</li>
             </div>
-            <h2>Vinos</h2>
-            <img class="col-4" src="./img-card/pared-tragos.png" alt="">
-            <div class="name row">
-                <h6 class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum?</h6>
-                <li class="col-6">Lorem, ipsum dolor.</li>
-                <li class="col-6">Lorem, ipsum dolor.</li>
-                <li class="col-6">Lorem, ipsum dolor.</li>
-                <li class="col-6">Lorem, ipsum dolor.</li>
-                <li class="col-6">Lorem, ipsum dolor.</li>
-                <li class="col-6">Lorem, ipsum dolor.</li>
-            </div>
-            <h2>Vodkas</h2>
+            <h2 id="vodkas">Vodkas</h2>
             <img class="col-4" src="./img-card/vodka.gif" alt="">
             <div class="name row">
                 <h6 class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum?</h6>
@@ -144,7 +150,7 @@
 
     <!----->
 
-
+<a href="#port" class="subir"><img src="./icon/navegar-flecha-hacia-arriba.png" alt=""></a>
 
 
 

@@ -6,6 +6,13 @@ center{
     background: black;
 }
 
+.port-inicial{
+    width: 100%;
+    position: absolute;
+    z-index: -1000;
+    
+}
+
 #btn{
     border: none;
     position: fixed;
@@ -83,12 +90,27 @@ center{
 }
 
     /* coctel */
+.daltomid2{
+    max-width: 100%;
+}
 .flex-items{
     margin: 0;
     max-width: 100%;
+    display: inline-block;
 }
 .flex-items>img{
-    width: 200px;
+    width: 100%;
+}
+@media screen and (max-width:280px) {
+    .flex-items>img{
+        width: 80px;
+    
+    }
+}
+
+.flex-items>p{
+    font-size: 12px;
+    color: rgb(231, 231, 66);
 }
 
 .items-link>img{
@@ -108,7 +130,6 @@ center{
 
 
 .text-port{
-    position: relative;
     height: 250px;
     text-align: center;
     color: #fff;
@@ -130,16 +151,76 @@ center{
     width: 300px;
 }
 .tragos>h1{
-    padding: 40px;
+    padding: 30px;
     font-size: 60px;
     font-family: Segoe Script;
     
     
 }
 .tragos>h2{
-    padding: 50px;
+    padding: 25px;
     color: rgb(175, 15, 15);
 }
 .tragos>.row>img{
     width: 300px;   
+}
+
+.items-categoria>li{
+    list-style-type: none;
+    background: rgb(175, 15, 15);
+    padding: 20px;
+}
+
+.items-categoria>li>a{
+    text-decoration: none;
+    color: rgb(231, 231, 66);
+    font-size: 20px;
+ 
+}
+
+@media  screen and (max-width: 1900px) {
+    .items-categoria>li>a:hover{
+        color: #fff;
+    }
+    .items-categoria>li>a:focus{
+        zoom: 1.2;
+    }
+    .items-categoria>.mojito:hover{
+        background-image: url(./img-card/mojito-categ.png);
+        background-size: 5px;
+        background-size: cover;
+        background-position-y: center;
+        
+    }
+    .items-categoria>.vino:hover{
+        background-image: url(./img-card/vino-categ.png);
+        background-size: 5px;
+        background-size: cover;
+        background-position-y: center;
+        
+    }
+    .items-categoria>.vodka:hover{
+        background-image: url(./img-card/vodka-categ.png);
+        background-size: 5px;
+        background-size: cover;
+        background-position-y: center;
+        
+    }
+}
+
+.subir{
+    position: absolute;
+    position: fixed;
+    background: 0000;
+    bottom: 120px;
+    right: 65px;
+    display: none;
+    z-index: 6000;
+
+}
+.subir>img{
+    padding: 5px;
+    background-color: rgba(229, 233, 17, 0.336);
+    border-radius: 50%;
+    width: 35px;
 }
