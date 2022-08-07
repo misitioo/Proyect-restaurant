@@ -57,7 +57,7 @@ abrir5.addEventListener('click',()=>{
     document.querySelector('.daltomid2').style.display = "block";
     document.querySelector('.daltomid').style.display = "none";
     document.querySelector('.tragos').style.display = "none";
-    document.querySelector('.portada').style.backgroundImage = "url(./img/portada1.png)"
+    document.querySelector('.portada').style.display = "none";
 
 
 
@@ -67,7 +67,8 @@ abrir6.addEventListener('click',()=>{
     document.querySelector('.daltomid2').style.display = "none";
     document.querySelector('.daltomid').style.display = "none";
     document.querySelector('.tragos').style.display = "block";
-    document.querySelector('.portada').style.backgroundImage = "url(./img-card/pared-tragos.png)"
+    document.getElementById('port').style.backgroundImage = "url(./img-card/pared-tragos.png)"
+    
 
 
 })
@@ -76,29 +77,11 @@ abrir2.addEventListener('click',()=>{
     document.querySelector('.daltomid2').style.display = "block";
     document.querySelector('.daltomid').style.display = "none";
     document.querySelector('.tragos').style.display = "none";
-    document.querySelector('.portada').style.backgroundImage = "url(./img/portada.jpg)"
+    document.querySelector('.portada').style.backgroundImage = "url(./img/portada1.png)"
 
 
 })
 
-
-abrir2.addEventListener('click', galery)
-function galery(image,price){
-    image = `<img src='./img/${image}' />`,
-    price = `<p>precio: ${price}</p>`
-    return[image,price]
-}
-
-
-for(i = 1;i<9;i++){
-    var paramsGalery = galery(`${i}.png`,"$ 000")
-    let paramsdiv = document.createElement('DIV')
-    paramsdiv.classList.add("col-6","col-md-4",`item-${i}`,'flex-items')
-
-    paramsdiv.innerHTML = paramsGalery[0] + paramsGalery[1];
-    fragmento.appendChild(paramsdiv)
-}
-dalto2.appendChild(fragmento)
 
 
 // lista
@@ -137,6 +120,7 @@ dalto.appendChild(fragmento)
 
 
 
+// *********
 
 
 

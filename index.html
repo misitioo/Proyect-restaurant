@@ -12,15 +12,18 @@
     <title>Restaurant</title>
 </head>
 <body>
+<nav>
+    <li><a href="index.html"><img class="img-nav" src="./icon/home.png" alt=""></a></li>
+    <li style=" color: #fff;">
+        <a href="#">
+        <img style="width: 30px; background: rgb(172, 28, 28); border-radius: 70%;" 
+        src="./icon/phone.png" alt=""></a>+569 999 999 </li>
+</nav>
 
 <div id="port" class="portada">
-    <img class="port-inicial" src="./img-card/port-inicial.png" alt="">
-    <div class="text-port">
-        <img src="./img/logo.png" alt="">
-        <h4>Restaurant familiar</h4>
-        <p>Lorem # ipsum dolor sit amet consecte</p>
+    <img style="height: 100vh; width: 100%;" class="d-none d-md-block port-inicial" src="./img-card/inicio.png" alt="">
+    <img style="height: 100vh; width: 100%;" class="d-block d-md-none port-inicial" src="./img-card/iniciomovil.gif" alt="">
 
-    </div>
 </div>
 
 <center>
@@ -30,7 +33,7 @@
             <img src="./icon/piezas-de-cubiertos.png" alt="">
         </button>
         
-        <button class="col-2 btns" type="submit" id="btn2" onclick="galery();">
+        <button class="col-2 btns" type="submit" id="btn2">
             <img src="./icon/menu.png" alt="">
         </button>
             
@@ -45,7 +48,7 @@
             <img src="./icon/piezas-de-cubiertos.png" alt="">
         </button>
 
-        <button class="col-sm-12 btns2" id="btns2" onclick="galery();">
+        <button class="col-sm-12 btns2" id="btns2">
             <img src="./icon/menu.png" alt="">
         </button>
 
@@ -55,7 +58,106 @@
     </div>
     <!----->
 
+    <div style="display: none;" class="daltomid2 row">
+        <h1>MENU</h1>
+        <!--cell-->
+        <ul id="option-menu" class=" d-sm-none row" style="position: fixed;">
+            <li class="col-3"><a href="#1">chicken</a></li>
+            <li class="col-3"><a href="#2">fried</a></li>
+            <li class="col-3"><a href="#3">lunch</a></li>
+            <li class="col-3"><a href="#4">salad</a></li>
+        </ul>
+        <!--pc-->
+        <ul id="option-menu" class="d-none d-sm-block row" style="position: fixed;">
+            <li class="col-3 lista"><a href="#1">chicken</a></li>
+            <li class="col-3 lista"><a href="#2">fried</a></li>
+            <li class="col-3 lista"><a href="#3">lunch</a></li>
+            <li class="col-3 lista"><a href="#4">salad</a></li>
+        </ul>
+        <div id="1" class="col-md-4 col-lg-6 row menu1">
+            <img class="col-6 col-sm-12 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/1.png" alt="">
+            <p class="col-6  col-sm-12 col-md-4 col-lg-4 rounded mx-auto float-left">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/1.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/1.png" alt="">
+            <p class="col-6  col-sm-12 col-md-4 col-lg-4 rounded mx-auto float-left">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/1.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/1.png" alt="">
+            <p class="col-6  col-sm-12 col-md-4 col-lg-4 rounded mx-auto float-left">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/1.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/1.png" alt="">
+            <p class="col-6  col-sm-12 col-md-4 col-lg-4 rounded mx-auto float-left">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/1.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/1.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+        </div>
+        <div id="2" class="col-md-4 col-lg-6 row menu2">
+            <img class="col-6 col-sm-12 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/2.png" alt="">
+            <p class="col-6  col-sm-12 col-md-4 col-lg-4 rounded mx-auto float-left">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/2.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/2.png" alt="">
+            <p class="col-6  col-sm-12 col-md-4 col-lg-4 rounded mx-auto float-left">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/2.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/2.png" alt="">
+            <p class="col-6  col-sm-12 col-md-4 col-lg-4 rounded mx-auto float-left">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/2.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/2.png" alt="">
+            <p class="col-6  col-sm-12 col-md-4 col-lg-4 rounded mx-auto float-left">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/2.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/1.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+        </div>
+        <div id="3" class="col-md-4 col-lg-6 row menu3">
+            <img class="col-6 col-sm-12 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/3.png" alt="">
+            <p class="col-6  col-sm-12 col-md-4 col-lg-4 rounded mx-auto float-left">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/3.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/3.png" alt="">
+            <p class="col-6  col-sm-12 col-md-4 col-lg-4 rounded mx-auto float-left">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/3.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/3.png" alt="">
+            <p class="col-6  col-sm-12 col-md-4 col-lg-4 rounded mx-auto float-left">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/3.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/3.png" alt="">
+            <p class="col-6  col-sm-12 col-md-4 col-lg-4 rounded mx-auto float-left">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/3.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/1.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+        </div>
+        <div id="4" class="col-md-4 col-lg-6 row menu4">
+            <img class="col-6 col-sm-12 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/4.png" alt="">
+            <p class="col-6  col-sm-12 col-md-4 col-lg-4 rounded mx-auto float-left">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/4.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/4.png" alt="">
+            <p class="col-6  col-sm-12 col-md-4 col-lg-4 rounded mx-auto float-left">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/4.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/4.png" alt="">
+            <p class="col-6  col-sm-12 col-md-4 col-lg-4 rounded mx-auto float-left">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/4.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/4.png" alt="">
+            <p class="col-6  col-sm-12 col-md-4 col-lg-4 rounded mx-auto float-left">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/4.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+            <img class="col-6 col-sm-12  col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block" src="./img/1.png" alt="">
+            <p class="col-6 col-sm-12 col-sm-6 col-md-4 col-lg-4 rounded mx-auto d-block">Lorem ipsum dolor sit amet consectetur.</p> 
+        </div>
 
+
+       
+    </div>
 
 
 
@@ -63,9 +165,10 @@
     <div class="container">
 
 
-        <div style="display: none;" class="daltomid2 row">
-            <h1>MENU</h1>
-        </div>
+
+
+     
+        
 
 
 
